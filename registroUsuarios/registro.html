@@ -10,8 +10,7 @@
     <div class="registro-wrapper">
 
         <div class="registro-left">
-            <!-- Imagen opcional aquí -->
-            <!-- <img src="imagenes/imgRegistro.png" alt="Registro" class="registro-img"> -->
+           
         </div>
         <div class="registro-right">
             <div class="form-box">
@@ -31,7 +30,7 @@
                 <input type="hidden" name="tipo" value="candidato" />
                 
                 <label for="nombre">Nombre Completo</label>
-                <input type="text" id="nombre" name="nombre" required minlength="3" maxlength="100">
+                <input type="text" id="nombre" name="nombre" required minlength="3" maxlength="100" placeholder="SOLO MAYUSCULAS" >
 
                 <label for="telefono">Teléfono</label>
                 <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{10,15}" placeholder="00-0000-0000" title="Ingresa solo números (mínimo 10 dígitos)">
@@ -58,7 +57,7 @@
                 <input type="hidden" name="tipo" value="empresa" />
                 
                 <label for="nombre_empresa">Nombre Empresa</label>
-                <input type="text" id="nombre_empresa" name="nombre_empresa" required minlength="3" maxlength="100">
+                <input type="text" id="nombre_empresa" name="nombre_empresa" required minlength="3" maxlength="100" placeholder="SOLO MAYUSCULAS">
                 
                 <label for="rfc">RFC o ID Fiscal</label>
                 <input type="text" id="rfc" name="rfc" required pattern="[A-Za-z0-9]{10,13}" title="Debe tener entre 10 y 13 caracteres alfanuméricos">
