@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Buscar Empleo - EmpleaFácil</title>
+  <link rel="stylesheet" href="../estilo/styles.css" />
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">EmpleaFácil</div>
+      <ul class="nav-links">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="#">Buscar Empleo</a></li>
+        <li><a href="#">Empresas</a></li>
+        <li><a href="#">Publicar Vacante</a></li>
+        <li class="login">
+          <a href="#">Iniciar Sesión</a>
+          <ul class="submenu">
+            <li><a href="#">Como Candidato</a></li>
+            <li><a href="#">Como Empresa</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contenido-busqueda">
+    <section class="buscador">
+      <h2>Busca tu próximo empleo</h2>
+      <form>
+        <input type="text" placeholder="¿Qué empleo buscas?" />
+        <input type="text" placeholder="Ciudad o estado" />
+        <select>
+          <option value="">Tipo de trabajo</option>
+          <option value="tiempo-completo">Tiempo completo</option>
+          <option value="medio-tiempo">Medio tiempo</option>
+          <option value="remoto">Remoto</option>
+        </select>
+        <button type="submit">Buscar</button>
+      </form>
+    </section>
+
+    <section class="resultados">
+      <h3>Vacantes encontradas</h3>
+
+      <div class="vacante">
+        <h4>Desarrollador Web Frontend</h4>
+        <p><strong>Empresa:</strong> Tecnologías MX</p>
+        <p><strong>Ubicación:</strong> Ciudad de México (Remoto)</p>
+        <p><strong>Salario:</strong> $20,000 - $25,000 MXN</p>
+        <a href="#">Ver más detalles</a>
+      </div>
+
+      <div class="vacante">
+        <h4>Diseñador UX/UI Junior</h4>
+        <p><strong>Empresa:</strong> Creativa Studio</p>
+        <p><strong>Ubicación:</strong> Guadalajara, Jalisco</p>
+        <p><strong>Salario:</strong> $15,000 MXN</p>
+        <a href="#">Ver más detalles</a>
+      </div>
+
+      <div class="vacante">
+        <h4>Analista de Datos</h4>
+        <p><strong>Empresa:</strong> DataCorp</p>
+        <p><strong>Ubicación:</strong> Monterrey, Nuevo León</p>
+        <p><strong>Salario:</strong> $28,000 MXN</p>
+        <a href="#">Ver más detalles</a>
+      </div>
+
+    </section>
+  </main>
+
+</body>
+</html>

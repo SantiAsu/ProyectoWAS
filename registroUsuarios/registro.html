@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Registro - EmpleaFácil</title>
+        <link rel="stylesheet" href="styleRegistro.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>Registro de Usuario</h1>
+
+            <div class="selector">
+            <label>Tipo de usuario:</label>
+            <select id="tipoUsuario" onchange="mostrarFormulario()">
+                <option value="">Seleccione...</option>
+                <option value="candidato">Candidato</option>
+                <option value="empresa">Empresa</option>
+            </select>
+            </div>
+
+            <!-- Formulario de Candidato -->
+            <form id="formCandidato" class="formulario" action="registro.php" method="POST" style="display: none;">
+            <h2>Registro como Candidato</h2>
+            <input type="hidden" name="tipo" value="candidato" />
+            <input type="text" name="nombre" placeholder="Nombre completo" required />
+            <input type="email" name="email" placeholder="Correo electrónico" required />
+            <input type="password" name="password" placeholder="Contraseña" required />
+            <input type="text" name="ocupacion" placeholder="Profesión u ocupación" />
+            <button type="submit">Registrarse</button>
+            </form>
+
+            <!-- Formulario de Empresa -->
+            <form id="formEmpresa" class="formulario" action="registro.php" method="POST" style="display: none;">
+            <h2>Registro como Empresa</h2>
+            <input type="hidden" name="tipo" value="empresa" />
+            <input type="text" name="nombre" placeholder="Nombre de la empresa" required />
+            <input type="email" name="email" placeholder="Correo de contacto" required />
+            <input type="password" name="password" placeholder="Contraseña" required />
+            <input type="text" name="giro" placeholder="Giro de la empresa" />
+            <input type="text" name="rfc" placeholder="RFC (opcional)" />
+            <button type="submit">Registrarse</button>
+            </form>
+        </div>
+
+        <script>
+            function mostrarFormulario() {
+            const tipo = document.getElementById("tipoUsuario").value;
+            document.getElementById("formCandidato").style.display = tipo === "candidato" ? "block" : "none";
+            document.getElementById("formEmpresa").style.display = tipo === "empresa" ? "block" : "none";
+            }
+        </script>
+    </body>
+</html>
