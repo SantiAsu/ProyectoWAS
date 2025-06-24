@@ -26,14 +26,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url('../imagenes/imgRegistro.png');
+  background-image: url('../imagenes/imgIniciar.png');
   background-size: cover;
   background-position: center;
+  position: relative;
 }
-
-.registro-img {
+.registro-left img {
   max-width: 260px;
   opacity: 0.93;
+  z-index: 1;
 }
 
 .registro-right {
@@ -66,27 +67,6 @@ body {
   font-weight: 400;
 }
 
-.selector {
-  margin-bottom: 20px;
-}
-.selector label {
-  font-size: 1rem;
-  color: var(--color4);
-  font-weight: 500;
-  display: block;
-  margin-bottom: 4px;
-}
-.selector select {
-  width: 100%;
-  padding: 10px;
-  border: 2px solid var(--color4);
-  border-radius: 6px;
-  font-size: 1rem;
-  color: var(--color1);
-  background: var(--color5);
-  margin-bottom: 5px;
-}
-
 .form-registro label {
   margin-top: 10px;
   color: var(--color4);
@@ -95,8 +75,7 @@ body {
   display: block;
 }
 
-.form-registro input,
-.form-registro textarea {
+.form-registro input {
   width: 100%;
   padding: 10px;
   margin-bottom: 3px;
@@ -106,12 +85,6 @@ body {
   font-size: 1rem;
   color: var(--color1);
   box-sizing: border-box;
-}
-
-.form-registro textarea {
-  resize: vertical;
-  min-height: 38px;
-  max-height: 80px;
 }
 
 .btn-registro {
