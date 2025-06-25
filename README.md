@@ -1,2 +1,2 @@
 # ProyectoWAS
-Proyecto de web.
+Proyecto de web, realizado en php, css y html.
