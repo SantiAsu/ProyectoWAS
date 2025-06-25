@@ -24,7 +24,7 @@ body {
   padding: 8px 22px;
   font-size: 1rem;
   position: fixed;
-  width: 90%;
+  width: 97%;
   top: 0;
   z-index: 10;
 }
@@ -56,7 +56,7 @@ body {
 
 /* Contenedor de la postulación exitosa */
 .postulacion-exitosa {
-  margin-top: 200px;
+  margin-top: 220px;
   text-align: center;
   padding: 50px 0;
 }
