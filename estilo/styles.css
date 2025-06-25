@@ -232,6 +232,7 @@ body {
 
 /*fotter*/
 .footer {
+  margin-top: 150px;
   background-color: var(--color2);
   color: var(--color5);
   padding: 40px 20px;
@@ -240,6 +241,7 @@ body {
 }
 
 .footer-content {
+    margin-top: 150px;
   max-width: 1200px;
   margin: 0 auto;
 }
